@@ -1,5 +1,5 @@
 /*
-	This patch adds the following columns MigratedGuaranteeCode,MigrationDate,MigrationDateID,MigratedEntitys to DimGuarantee
+	This patch adds these 3 following columns MigratedGuaranteeCode,MigrationDate,MigrationDateID,MigratedEntitys to DimGuarantee
 	
 	List of SQL scripts to deploy:
 		DWExtract.PLT_TRADE_FINANCE
