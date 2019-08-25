@@ -1,0 +1,64 @@
+CREATE TABLE DWClean.PLT_TRADE_FINANCE
+( ETLProcessId                     unsigned INT   not null
+ ,ETLProcessRunId                  unsigned INT   not null
+ ,ETLProcessDateId                 unsigned INT   not null
+ ,Entity                           varchar(4)     not null
+ ,CountryID	                   varchar(3)     not null
+ ,TradeFinanceID	           varchar(40)    not null
+ ,ContractID	                   varchar(40)    not null
+ ,AgreementNumber	           varchar(40)    not null
+ ,Description	                   varchar(100)   not null
+ ,Beneficiary	                   varchar(100)   not null
+ ,Currency	                   varchar(3)     not null
+ ,CreationDate	                   date           not null
+ ,OpenDate	                   date           not null
+ ,DueDate	                   date           not null
+ ,CIF	                           varchar(6)     not null
+ ,RepaymentAccount	           varchar(10)    not null
+ ,OpenAmount	                   decimal(18,4)  not null
+ ,LiabilityGL	                   varchar(15)    not null
+ ,LiabilityAmount	           decimal(18,4)  not null
+ ,UsageFeeAccruableRateType	   varchar(3)     not null
+ ,UsageFeeAccruableRate	           decimal(18,4)  not null
+ ,UsageFeeAccruableDebtGL	   varchar(15)    not null
+ ,UsageFeeAccruableProfitGL	   varchar(15)    not null
+ ,UsageFeeAccruableDebt	           decimal(18,4)  not null
+ ,UsageFeeAccruableAccrued	   decimal(18,10) not null
+ ,UsageFeeFixedProfitGL	           varchar(15)    not null
+ ,UsageFeeFixedBalance	           decimal(18,4)  not null
+ ,DaysInYear	                   integer        not null
+ ,Status	                   varchar(15)    not null
+ ,ProductCode	                   varchar(15)    not null
+ ,TradeFinanceType	           varchar(20)    not null
+ ,PenaltyDebtGL	                   varchar(15)    not null
+ ,PenaltyProfitGL	           varchar(15)    not null
+ ,PenaltyRate	                   decimal(18,4)  not null
+ ,PenaltyAmount	                   decimal(18,4)  not null
+ ,OffBalanceProvisionGL	           varchar(15)    not null
+ ,OffBalanceProvisionAmount	   decimal(18,4)  not null
+ ,RelatedPoint	                   char(10)       not null
+ ,RelatedDepartment	           char(10)       not null
+ ,SellPoint	                   char(10)       not null
+ ,SellDepartment	           char(10)       not null
+ ,InterestProvisionsGL	           varchar(15)    not null
+ ,InterestProvisionsAmount	   decimal(18,4)  not null
+ ,LimitFeeGL	                   varchar(15)    not null
+ ,LimitFeeProfitGL	           varchar(15)    not null
+ ,LimitFee	                   decimal(18,4)  not null
+ ,OtherFeeProfitGL	           varchar(15)    not null
+ ,OtherFee	                   decimal(18,4)  not null
+ ,AmendmentFeeProfitGL	           varchar(15)    not null
+ ,AmendmentFee	                   decimal(18,4)  not null
+ ,IssuingFeeProfitGL	           varchar(15)    not null
+ ,IssuingFee	                   decimal(18,4)  not null
+ ,UncommittedFlag	           varchar(10)    not null	
+ ,ActualExpiryDate	           date           not null
+ ,OriginalSource                   char(6)        not null
+ ,LbCreditID                       varchar(40)    not null
+ ,PaidAmountDue                    decimal(18,4)  not null
+ ,PaidAmountDueDebtGL              varchar(15)    not null
+ ,PaidAmountDueOverdueNumberOfDays integer        not null
+ ,MigratedDealCode                 varchar(40)    not null
+ ,MigrationDate                    date           not null
+ ,MigratedEntity                   varchar(4)     not null
+);

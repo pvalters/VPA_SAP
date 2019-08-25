@@ -1,0 +1,66 @@
+create table DWStage.Guarantee (
+	  ETLProcessId                              unsigned integer    not null
+	, ETLProcessRunId                           unsigned integer    not null
+	, ETLProcessDateId                          unsigned integer    not null
+	, Entity                                    varchar(4)          not null
+	, SourceSystemCode                          varchar(10)         not null
+	, GuaranteeFactDate                         date                not null
+	, GuaranteeCode                             varchar(40)         not null
+	, AgreementNumber                           varchar(50)         not null
+	, GuaranteeStartDate                        date                not null
+	, GuaranteeMaturityDate                     date                not null
+	, AccountNumberShort                        varchar(40)         not null
+	, GuaranteeCurrency                         varchar(3)          not null
+	, ProvisionCurrency                         varchar(3)          not null
+	, ProductNumber                             varchar(20)         not null
+	, PortfolioCode                             varchar(20)         not null
+	, BeneficiaryPortfolioCode                  varchar(60)         not null
+	, GuaranteeStatus                           varchar(11)         not null
+	, GLAccount                                 varchar(15)         not null
+	, ProvisionGLAccount                        varchar(15)         not null
+	, AccruedInterestGLAccount                  varchar(15)         not null
+	, InterestIncomeGLAccount                   varchar(15)         not null
+	, ProvisionOnInterestGLAccount              varchar(15)         not null
+	, IsCancellable                             varchar(11)         not null
+	, IsDefaulted                               varchar(11)         not null
+	, DefaultDate                               date                not null
+	, AccountNumber                             varchar(10)         not null
+	, RiskStageCode                             varchar(50)         not null
+	, RiskStageName                             varchar(200)        not null
+	, Amount                                    decimal(18,4)       not null
+	, AccruedInterestAmount                     decimal(18,4)       not null
+	, ProvisionAmount                           decimal(18,4)       not null
+	, CalculatedInterestAmount                  decimal(18,10)      not null
+	, InterestRate                              decimal(18,4)       not null
+	, MarginRateValue                           decimal(18,4)       not null
+	, InterestProvisionAmount                   decimal(18,4)       not null
+	, ContractNumber                            varchar(40)         not null
+	, AdjustedRiskStageCode                     varchar(50)         not null
+	, AdjustedRiskStageName                     varchar(200)        not null
+	, OpenAmount                                decimal(18,4)       not null
+	, PenaltyAmount                             decimal(18,4)       not null
+	, PenaltyDebtGLAccount                      varchar(15)         not null
+	, PenaltyProfitGLAccount                    varchar(15)         not null
+	, UsageFeeFixedProfitGLAccount              varchar(15)         not null
+	, UsageFeeFixedAmount                       decimal(18,4)       not null
+	, LimitFeeGLAccount                         varchar(15)         not null
+	, LimitFeeProfitGLAccount                   varchar(15)         not null
+	, LimitFeeAmount                            decimal(18,4)       not null
+	, OtherFeeProfitGLAccount                   varchar(15)         not null
+	, OtherFeeAmount                            decimal(18,4)       not null
+	, AmendmentFeeProfitGLAccount               varchar(15)         not null
+	, AmendmentFeeAmount                        decimal(18,4)       not null
+	, IssuingFeeProfitGLAccount                 varchar(15)         not null
+	, IssuingFeeAmount                          decimal(18,4)       not null
+	, UncommittedFlag	                    varchar(10)         not null
+	, ActualExpiryDate                          date                not null
+	, OriginalSource                            varchar(6)          not null
+	, LBCreditNumber                            varchar(40)         not null
+	, PaidAmountDue                             decimal(18,4)       not null
+    	, PaidAmountDueDebtGLAccount                varchar(15)         not null
+    	, PaidAmountDueOverdueNumberOfDays          integer             not null
+    	, MigratedGuaranteeCode                     varchar(40)         not null
+    	, MigrationDate                             date                not null
+    	, MigrationDateID                           unsigned integer    not null
+    	, MigratedEntity                            varchar(4)          not null
+)
